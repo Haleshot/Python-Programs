@@ -1,3 +1,4 @@
+#Program that prints Pyramid Number Shape
 def Pyramid(n):
     l = n - 1
     for i in range(0, n):
