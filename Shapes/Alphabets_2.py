@@ -1,3 +1,4 @@
+#Program that prints Alphabetical Shape
 def Numbers(n):
     for i in range(0, n):
         n1 = 65 + i
