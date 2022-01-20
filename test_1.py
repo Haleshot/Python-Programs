@@ -1,3 +1,4 @@
+#Test Program that prints Asterisk Shape
 k = 6
 temp = 2*k - 2
 for i in range(k):
