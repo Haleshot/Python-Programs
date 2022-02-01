@@ -1,4 +1,4 @@
-#Program that prints Number Shape
+#Program that prints Number Shape as per input limit.
 def Numbers(n):
     n1 = 1
     for i in range(0, n):
