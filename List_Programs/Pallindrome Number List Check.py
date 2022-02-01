@@ -1,4 +1,4 @@
-# Program to check for Pallindrome Number
+# Program to check for Pallindrome Number using function.
 def Pallindrome(n):
     l = []
     for i in range(0, n):
