@@ -1,4 +1,4 @@
-#Program that prints list elements
+#Program that prints list elements using function.
 def List(n):
     l = []
     for i in range(0, n):
