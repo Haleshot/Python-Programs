@@ -1,4 +1,4 @@
-#Program that prints Alphabetical Shape
+#Program that prints Alphabetical Shape according to input limit.
 def Numbers(n):
     for i in range(0, n):
         n1 = 65
