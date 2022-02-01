@@ -1,4 +1,4 @@
-#Program that prints Shape
+#Program that prints Shape as per input limit.
 k = 6
 temp = 2*k - 2
 for i in range(k):
