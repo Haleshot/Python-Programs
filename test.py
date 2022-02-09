@@ -1,6 +1,7 @@
 #Project XII A
 #Ping Pong Game
 #Import library
+#2 Player game
 
 import pygame
 import random
