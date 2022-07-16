@@ -2,15 +2,15 @@
     "sqltools.connections": [
         {
             "mysqlOptions": {
-                "authProtocol": "default"
+                "authProtocol": "xprotocol"
             },
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
             "name": "FirstMySQLConnection",
-            "database": "myshop",
-            "username": "admin",
+            "database": "world",
+            "username": "root",
             "password": "admin"
         }
     ]
