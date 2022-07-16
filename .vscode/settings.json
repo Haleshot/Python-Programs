@@ -11,8 +11,7 @@
             "name": "FirstMySQLConnection",
             "database": "firstmysqldatabase",
             "username": "Haleshot",
-            "password": "haleshot@2003",
-            "connectionTimeout": 15
+            "password": "haleshot@2003"
         }
     ]
 }
