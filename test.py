@@ -8,8 +8,7 @@ a, b = input("Enter the rows and columns for Rooms A and B: ").split(' ')
 a = int(a)
 b = int(b)
 c = 0
-
-mat = []
+mat = [a][b]
 
 
 for i in range(a):
