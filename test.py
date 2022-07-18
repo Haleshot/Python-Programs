@@ -7,15 +7,7 @@ a, b = input("Enter the rows and columns for Rooms A and B : ").split()
 a = int(a)
 b = int(b)
 c = 0
-mat = []
-
-for i in range(a):
-    row = []
-    for j in range(b):
-        row.append(input())
-    mat.append(row)
-
-mat = np.array(mat)
+mat = np.random.randint(2, size = (a, b))
 print(mat)
 
 for i in range(a):
@@ -27,4 +19,4 @@ for i in range(a):
             c += 1 * 1000
             print("The Room {}{} is dirty, the cleaning process starts now...".format(i, j))
             print("The price is = ₹", c)
-            
+        
