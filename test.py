@@ -24,5 +24,7 @@ for i in range(a):
             print("The Room {}{} is clean, no cleaning required. Moving to the next room.".format(i, j))
         else:
             mat[i][j] = '0'
+            c += 1 * 1000
             print("The Room {}{} is dirty, the cleaning process starts now...".format(i, j))
-            c += 1
+            print("The price is = ₹", c)
+            
