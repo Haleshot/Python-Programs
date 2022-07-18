@@ -4,14 +4,24 @@
 
 import random
 import numpy as np
-a, b = input("Enter the rows and columns for Rooms A and B").split()
+a, b = input("Enter the rows and columns for Rooms A and B: ").split(' ')
 a = int(a)
 b = int(b)
+c = 0
 
-mat = np.array
+mat = []
 
 
-for i in a:
-    for j in b:
-        mat[i][j] = input("Enter the cleanliness status for the room")
+for i in range(a):
+    for j in range(b):
+        ele = input("Enter the Cleanliness Status for the room\n")
+        mat[i][j].append(ele)
+for i in range(a):
+    for j in range(b):
+        if mat[i][j] == "0":
+            print("The Room is dirty, the cleaning process starts now...")
+            print("Price will be updated at the end")
+            c += 1
         
+        else:
+            print("The Room is clean, no cleaning required. Moving to the next room.")
