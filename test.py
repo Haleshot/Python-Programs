@@ -1,5 +1,5 @@
 # Program to check whether a room is clean or not
-# User will enter 1 if the room is clean, 0 if the room is dirty
+# Input is randomly generated.
 
 import random
 import numpy as np
@@ -12,11 +12,24 @@ print(mat)
 
 for i in range(a):
     for j in range(b):
-        if mat[i][j] == '1':
+        if mat[i][j] == 1:
             print("The Room {}{} is clean, no cleaning required. Moving to the next room.".format(i, j))
+
         else:
-            mat[i][j] = '0'
+            mat[i][j] == 0
             c += 1 * 1000
             print("The Room {}{} is dirty, the cleaning process starts now...".format(i, j))
-            print("The price is = ₹", c)
-        
+
+print("The Final Price is = ₹", c)
+
+""" 
+Program for user input
+for i in range(a):
+    row = []
+    for j in range(b):
+        row.append(input())
+    mat.append(row)
+
+mat = np.array(mat)
+Replace the lines 26 - 33 from the 10th line.
+"""
