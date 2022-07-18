@@ -20,7 +20,7 @@ print(mat)
 
 for i in range(a):
     for j in range(b):
-        if mat[a][b] == '1':
+        if mat[i][j] == '1':
             print("The Room {}{} is clean, no cleaning required. Moving to the next room.".format(i, j))
         else:
             mat[i][j] = '0'
