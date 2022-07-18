@@ -25,3 +25,4 @@ for i in range(a):
         else:
             mat[i][j] = '0'
             print("The Room {}{} is dirty, the cleaning process starts now...".format(i, j))
+            c += 1
