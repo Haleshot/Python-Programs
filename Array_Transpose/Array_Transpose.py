@@ -29,10 +29,9 @@ for i in range(row):
     
 
 # Checking whether the Matrix is a Square Matrix or not.
-while row == column:
-    for i in range(row):
-        for j in range(column):
-            result[column][row] = array_1[row][column]
+for i in range(row):
+    for j in range(column):
+        result[j][i] = array_1[i][j]
 
 # Transpose of a Matrix
 print("\n")
