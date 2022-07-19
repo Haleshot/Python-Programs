@@ -8,6 +8,7 @@ array_1 = []
 array_2 = []
 array_3 = []
 
+# Matrix 1 Formation
 for i in range(row):
     col = []
     for j in range(column):
@@ -15,6 +16,7 @@ for i in range(row):
         col.append(ele)
     array_1.append(col)
 
+# Matrix 2 Formation
 for i in range(row):
     col = []
     for j in range(column):
@@ -22,6 +24,7 @@ for i in range(row):
         col.append(ele)
     array_2.append(col)
 
+# Sum of Matrices formation Formation
 for i in range(row):
     col = []
     for j in range(column):
@@ -41,7 +44,7 @@ print("The Matrix B is : \n")
 for i in array_2:
     print(i)
 
-# Sum of Matrices lines
+# Sum of Matrices
 print("\n")
 print("The Sum of Matrices is : \n")
 for i in array_3:
