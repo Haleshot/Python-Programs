@@ -11,21 +11,38 @@ array_3 = []
 for i in range(row):
     col = []
     for j in range(column):
-        ele = int(input("Enter the Element {} for the Matrix 1 : ".format(i)))
+        ele = int(input("Enter the Element {}{} for the Matrix 1 : ".format(i, j)))
         col.append(ele)
     array_1.append(col)
 
 for i in range(row):
     col = []
     for j in range(column):
-        ele = int(input("Enter the Element {} for the Matrix 2 : ".format(i)))
+        ele = int(input("Enter the Element {}{} for the Matrix 2 : ".format(i, j)))
         col.append(ele)
     array_2.append(col)
 
 for i in range(row):
+    col = []
     for j in range(column):
-        sum += array_1[i][j] + array_2[i][j]
-        array_3.append(sum)
+        sum = array_1[i][j] + array_2[i][j]
+        col.append(sum)
+    array_3.append(col)
 
+print("\n")
+
+print("The Matrix A is : \n")
+for i in array_1:
+    print(i)
+
+print("\n")
+
+print("The Matrix B is : \n")
+for i in array_2:
+    print(i)
+
+# Sum of Matrices lines
+print("\n")
+print("The Sum of Matrices is : \n")
 for i in array_3:
     print(i)
