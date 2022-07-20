@@ -34,6 +34,7 @@ def main():
             a.append(value)
         
         elif ch == 2:
+            a = sorted(a)
             for i in a:
                 print(i)
         
@@ -42,6 +43,7 @@ def main():
             result = Binary_Search(a, value)
 
             if result != -1:
+                a = sorted(a)
                 print("Element present at index :", str(result), "in the array")
             
             else:
