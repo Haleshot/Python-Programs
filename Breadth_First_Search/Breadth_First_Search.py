@@ -16,7 +16,13 @@ def BFS(visited, graph, node):
 
     while queue:
         m = queue.pop(0)
-        print(m, " - ", end = "")
+        queue_1 = iter(queue)
+        val = next(queue_1, 'end')
+
+        if val == 'end':
+            pass
+        else:
+            print(m, " - ", end = "")
             
 
         for adjacent in graph[m]:
