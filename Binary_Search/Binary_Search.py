@@ -9,9 +9,9 @@ def Binary_Search(array_fun, value):
     if array_fun == sorted(array_fun):
         low = 0
         high = len(array_fun) - 1
-        mid = (low + high)//2
 
         while low <= high:
+            mid = (low + high)//2
             if array_fun[mid] < value:
                 low = mid + 1
             
