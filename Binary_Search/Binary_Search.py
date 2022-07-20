@@ -1,10 +1,7 @@
 # Program which helps in finding an element in a sorted array, Binary Search Technique, Complexity = O(log(n))
-array = []
-limit = int(input("Enter the limit for the array : "))
-print("Please enter Array elements in ascending order")
-for i in range(limit):
-    ele = int(input("Enter Element {} for the array : ".format(i)))
-    array.append(ele)
+
+
+from binascii import a2b_hex
 
 
 def Binary_Search(array_fun, value):
@@ -30,7 +27,34 @@ def Binary_Search(array_fun, value):
         Binary_Search(array_fun, value)
 
 def main():
+    a = []
     while True:
         print("\nThe Menu is : ")
-        print("1. Insert a value in the BST\n2. Display the BST\n3. Exit\n")
+        print("1. Insert a value in the array\n2. Display the array\n3. Search for an Element in the array\n4.Exit\n")
         ch = int(input("Enter the choice : "))
+
+        if ch == 1:
+            value = int(input("Enter the value to be entered into the array : "))
+            a.append(value)
+        
+        elif ch == 2:
+            for i in a:
+                print(i)
+        
+        elif ch == 3:
+            value = int(input("Enter the value to be searched from the array : "))
+            result = Binary_Search(a, value)
+
+            if result != -1:
+                print("Element present at index : ", str(result), "in the array")
+            
+            else:
+                print("Element not found in array")
+
+        elif ch == 4:
+            exit(0)
+        
+        else:
+            print("Invalid Choice!")
+
+main()
