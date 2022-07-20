@@ -5,8 +5,7 @@ from binascii import a2b_hex
 
 
 def Binary_Search(array_fun, value):
-    is_sorted = True
-    if array_fun == sorted(array_fun):
+        array_fun = sorted(array_fun)
         low = 0
         high = len(array_fun) - 1
 
@@ -22,9 +21,6 @@ def Binary_Search(array_fun, value):
                 return mid
         return -1
     
-    else:
-        array_fun = sorted(array_fun)
-        Binary_Search(array_fun, value)
 
 def main():
     a = []
@@ -46,7 +42,7 @@ def main():
             result = Binary_Search(a, value)
 
             if result != -1:
-                print("Element present at index : ", str(result), "in the array")
+                print("Element present at index :", str(result), "in the array")
             
             else:
                 print("Element not found in array")
