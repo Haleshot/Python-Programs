@@ -2,5 +2,7 @@
 visited = []
 queue = []
 
+
+# Function for BFS
 def BFS(visited, graph, node):
-    
+    visited.append(node)
