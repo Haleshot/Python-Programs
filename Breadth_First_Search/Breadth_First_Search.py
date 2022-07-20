@@ -1,6 +1,8 @@
 # Breadth First Search Traversal program in Python
-
 # Initializing a graph
+
+from itertools import cycle
+
 graph = {'0' : ['1', '2'], '1' : ['2'], '2': ['3'], '3' : ['1', '2']}
 
 visited = [] # Visiting nodes List
@@ -14,7 +16,8 @@ def BFS(visited, graph, node):
 
     while queue:
         m = queue.pop(0)
-        print(m, " - ")
+        print(m, " - ", end = "")
+            
 
         for adjacent in graph[m]:
             if adjacent not in visited:
@@ -23,4 +26,4 @@ def BFS(visited, graph, node):
 
 
 print("THE BFS Traversal is : ")
-print(visited, graph, '0')
+BFS(visited, graph, '0')
