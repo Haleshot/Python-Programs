@@ -2,7 +2,6 @@
 # Initializing a graph
 
 from itertools import cycle
-import sys
 
 graph = {'0' : ['1', '2'], '1' : ['2'], '2': ['3'], '3' : ['1', '2']}
 
@@ -32,4 +31,3 @@ def BFS(visited, graph, node):
 
 print("THE BFS Traversal is : ")
 BFS(visited, graph, '0')
-sys.stdout.write('\b\b')
