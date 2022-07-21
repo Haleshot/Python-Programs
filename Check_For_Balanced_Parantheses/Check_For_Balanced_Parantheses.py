@@ -18,10 +18,17 @@ def check_match(x, y):
 # Function to check for Balanced Parantheses
 def Check_Parantheses(exp):
     for i in exp:
-        if i == '(' or i == '{' or x == '[' :
+        if i == '(' or i == '{' or i == '[' :
             stack.append(i)
-        elif i == ')' or i == '}' or x == ']' :
-            top = exp
+        elif i == ')' or i == '}' or i == ']' :
+            top = stack[-1]
+            if len(stack) == 0 or check_match(top, i) == 0:
+                return 0
+            else:
+                stack.pop()
+
+    if len(stack) == 0:
+        return 1
 
 
 
@@ -34,6 +41,8 @@ def main():
         # Assigning each operator to the Stack
         for i in expression:
             stack.append(i)
+
+        print(expression)
         
         if Check_Parantheses(expression) == 1:
             print("The Brackets are Balanced!")
