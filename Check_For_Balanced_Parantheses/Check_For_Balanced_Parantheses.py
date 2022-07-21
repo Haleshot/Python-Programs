@@ -1,35 +1,37 @@
-# Function to check for Balanced Parantheses
-
-# Declaring the Stack
-stack = []
-
+# Program to check for Balanced Parantheses
 
 # Check Matching Characters Function
 def check_match(x, y):
 
     if x == '(' and y == ')':
-        return 1
+        return True
     elif x == '{' and y == '}':
-        return 1
+        return True
     elif x == '[' and y == ']':
-        return 1
-    return 0
+        return True
+    return False
 
 # Function to check for Balanced Parantheses
 def Check_Parantheses(exp):
+    # Declaring the Stack
+    stack = []
+
     for i in exp:
+
+        # Assigning/ Appending/ Adding the Opening braces to the Stack
         if i == '(' or i == '{' or i == '[' :
             stack.append(i)
         elif i == ')' or i == '}' or i == ']' :
-            top = stack[-1]
+            top = stack.pop()
             result = check_match(top, i)
-            if len(stack) == 0 or result == 0:
-                return 0
+            if not stack or result == 0:
+                return False
             else:
                 stack.pop()
 
-    if len(stack) == 0:
-        return 1
+    if stack:
+        return False
+    return True
 
 
 
@@ -38,10 +40,6 @@ def main():
     is_true = True
     while is_true:
         expression = input("Enter the Expression : ")
-
-        # Assigning each operator to the Stack
-        for i in expression:
-            stack.append(i)
 
         print(expression)
         
