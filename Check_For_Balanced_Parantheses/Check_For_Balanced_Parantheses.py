@@ -21,6 +21,7 @@ def Check_Parantheses(exp):
         # Assigning/ Appending/ Adding the Opening braces to the Stack
         if i == '(' or i == '{' or i == '[' :
             stack.append(i)
+        
         elif i == ')' or i == '}' or i == ']' :
             top = stack.pop()
             result = check_match(top, i)
