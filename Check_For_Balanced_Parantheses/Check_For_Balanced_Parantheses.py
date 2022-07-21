@@ -1,16 +1,5 @@
 # Program to check for Balanced Parantheses
 
-# Check Matching Characters Function
-def check_match(x, y):
-
-    if x == '(' and y == ')':
-        return True
-    elif x == '{' and y == '}':
-        return True
-    elif x == '[' and y == ']':
-        return True
-    return False
-
 # Function to check for Balanced Parantheses
 def Check_Parantheses(exp):
     # Declaring the Stack
@@ -23,13 +12,18 @@ def Check_Parantheses(exp):
             stack.append(i)
         elif i == ')' or i == '}' or i == ']' :
             top = stack.pop()
-            if not stack or check_match(top, i) == 0:
+            if not stack :
                 return False
-            else:
-                stack.pop()
+            if top == '(' and i != ')':
+                return False
+            elif top == '{' and i != '}':
+                return False
+            elif top == '[' and i != ']':
+                return False
 
-    if not stack:
-        return True
+    if stack:
+        return False
+    return True
 
 
 
