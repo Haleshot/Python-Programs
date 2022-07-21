@@ -22,7 +22,8 @@ def Check_Parantheses(exp):
             stack.append(i)
         elif i == ')' or i == '}' or i == ']' :
             top = stack[-1]
-            if len(stack) == 0 or check_match(top, i) == 0:
+            result = check_match(top, i)
+            if len(stack) == 0 or result == 0:
                 return 0
             else:
                 stack.pop()
