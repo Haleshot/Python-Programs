@@ -11,19 +11,23 @@ def Check_Parantheses(exp):
         if i == '(' or i == '{' or i == '[' :
             stack.append(i)
         elif i == ')' or i == '}' or i == ']' :
-            top = stack.pop()
             if not stack :
                 return False
-            if top == '(' and i != ')':
-                return False
-            elif top == '{' and i != '}':
-                return False
-            elif top == '[' and i != ']':
-                return False
+            top = stack.pop()
+            if top == '(' :
+                 if i != ')':
+                    return False
 
-    if stack:
-        return False
-    return True
+            if top == '{':
+                if i != '}':
+                    return False
+
+            if top == '[':
+                if i != ']':
+                    return False
+
+    if not stack:
+        return True
 
 
 
@@ -35,10 +39,10 @@ def main():
 
         print(expression)
         
-        if Check_Parantheses(expression) == 1:
+        if Check_Parantheses(expression):
             print("The Brackets are Balanced!")
 
-        elif Check_Parantheses(expression) == 0:
+        else:
             print("The Brackets are not Balanced!")
 
         is_true = int(input("\nWant to continue? (Yes = Input 1/ False = Input 0) : "))
