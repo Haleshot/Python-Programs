@@ -1,4 +1,3 @@
-
 # Program that creates Array Transpose of arrays as entered by user.
 row = int(input("Enter the Row limit for the Matrices : "))
 column = int(input("Enter the Column limit for the Matrices : "))
