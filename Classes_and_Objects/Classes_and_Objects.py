@@ -18,7 +18,7 @@ class Student:
     def __init__(self):
         self.Name = input("Enter the Name of the Student : ")
         self.Marks = float(input("Enter the Marks of the Student : "))
-        self.Subject = input("Enter the Sunject of the Student : ")
+        self.Subject = input("Enter the Subject of the Student : ")
 
 
     def display(self):
