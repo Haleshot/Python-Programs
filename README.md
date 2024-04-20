@@ -1,1 +1,4 @@
-This repo contains program files written in Python.
+This repository contains program files written in Python.
+
+## TODO
+- [ ] Add/update/modify repository
